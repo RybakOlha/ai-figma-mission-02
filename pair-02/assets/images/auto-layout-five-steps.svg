@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="640" viewBox="0 0 1160 640" role="img" aria-labelledby="t d">
+<title id="t">Margin, Padding та Gap — три види відстаней</title><desc id="d">Ліворуч показано зовнішній простір між карткою та сусіднім блоком. Праворуч показано внутрішній відступ між межею картки та її вмістом, а також проміжок між текстом та кнопкою.</desc>
+<rect width="1160" height="640" rx="24" fill="#f3f6fd"/>
+<text x="44" y="58" font-family="DejaVu Sans,Arial,sans-serif" font-size="29" font-weight="700" fill="#192c57">Відступи в інтерфейсі</text>
+<text x="44" y="90" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#526587">Зовні контейнера · всередині контейнера · між елементами</text>
+<!-- left panel -->
+<rect x="32" y="118" width="535" height="440" rx="20" fill="#fff" stroke="#c8d6f1" stroke-width="2"/>
+<text x="56" y="154" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700" fill="#192c57">Margin — зовнішній простір</text>
+<text x="56" y="183" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#526587">Відстань між окремими блоками</text>
+<rect x="83" y="219" width="430" height="88" rx="12" fill="#e8effe" stroke="#9eb5e6" stroke-width="2"/>
+<text x="103" y="267" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700" fill="#233b83">Сусідній блок</text>
+<rect x="83" y="387" width="430" height="96" rx="12" fill="#f7f9ff" stroke="#3659cc" stroke-width="3"/>
+<text x="103" y="439" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700" fill="#233b83">Картка</text>
+<line x1="298" y1="315" x2="298" y2="379" stroke="#128d91" stroke-width="3"/>
+<path d="M290 323 L298 312 L306 323 M290 371 L298 382 L306 371" fill="none" stroke="#128d91" stroke-width="3"/>
+<rect x="322" y="331" width="158" height="32" rx="9" fill="#e2f4f1"/>
+<text x="334" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="700" fill="#087c7d">Margin · 80 px</text>
+<text x="56" y="523" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#526587">У Figma це не окреме поле Auto Layout.</text>
+<!-- right panel -->
+<rect x="593" y="118" width="535" height="440" rx="20" fill="#fff" stroke="#c8d6f1" stroke-width="2"/>
+<text x="617" y="154" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700" fill="#192c57">Padding і Gap — усередині</text>
+<text x="617" y="183" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#526587">Приклад картки з Auto Layout</text>
+<!-- container and shaded padding -->
+<rect x="655" y="211" width="410" height="284" rx="18" fill="#dfe9ff" stroke="#3659cc" stroke-width="3"/>
+<rect x="696" y="252" width="328" height="202" rx="11" fill="#fff" stroke="#a5b8e1" stroke-dasharray="7 6" stroke-width="2"/>
+<text x="714" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700" fill="#192c57">Назва завдання</text>
+<text x="714" y="320" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#526587">Опис навчальної картки</text>
+<rect x="714" y="372" width="158" height="49" rx="10" fill="#3659cc"/>
+<text x="757" y="402" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" fill="#fff">Дія</text>
+<!-- padding callout top -->
+<line x1="916" y1="214" x2="916" y2="249" stroke="#0c8c91" stroke-width="3"/>
+<path d="M910 221 L916 212 L922 221 M910 243 L916 252 L922 243" fill="none" stroke="#0c8c91" stroke-width="2"/>
+<rect x="936" y="219" width="115" height="27" rx="8" fill="#e2f4f1"/>
+<text x="944" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#087c7d">Padding 40</text>
+<!-- gap between description and button -->
+<line x1="891" y1="328" x2="891" y2="369" stroke="#b05b38" stroke-width="3"/>
+<path d="M885 336 L891 326 L897 336 M885 362 L891 372 L897 362" fill="none" stroke="#b05b38" stroke-width="2"/>
+<rect x="906" y="337" width="92" height="25" rx="8" fill="#fff0e7"/>
+<text x="916" y="355" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#994a2b">Gap 48</text>
+<text x="617" y="523" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#526587">Padding — до вмісту; Gap — між дочірніми елементами.</text>
+<text x="580" y="608" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#526587">Значення в пікселях — умовний приклад для пояснення відстаней.</text>
+</svg>
