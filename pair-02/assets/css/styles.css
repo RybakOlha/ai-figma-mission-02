@@ -3,7 +3,7 @@
 .import-mission{border:1px solid #b8d7df;border-radius:14px;padding:1.1rem;margin:1.1rem 0;background:rgba(19,137,149,.055)}.import-mission h3{margin-top:0}.previous-audit{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6;padding:.6rem 0}.previous-audit h4{margin:.8rem 0 .3rem}.previous-audit p{margin:.2rem 0 .7rem}.previous-audit .audit-entry{padding:.65rem;border-left:3px solid #14808d;margin:.6rem 0;background:rgba(90,145,165,.07)}
 
 /* Detailed educational diagrams */
-.stage figure img{display:block;width:100%;height:auto;object-fit:contain;background:#f7f9fd;border-radius:16px}.stage figure{margin:22px 0}.stage figcaption{line-height:1.55}.diagram-explainer{border-left:4px solid #087d86;background:#edf7f7;border-radius:0 12px 12px 0;padding:15px 20px;margin:14px 0 24px}.diagram-explainer h4{margin:0 0 8px;color:#13546a}.diagram-explainer p{margin:8px 0;line-height:1.65}@media(max-width:640px){.stage figure{overflow-x:auto}.stage figure img{min-width:700px}}
+.stage figure img{display:block;width:100%;height:auto;object-fit:contain;background:#f7f9fd;border-radius:16px}.stage figure{margin:22px 0}.stage figcaption{line-height:1.55}.diagram-explainer{border-left:4px solid #087d86;background:#edf7f7;border-radius:0 12px 12px 0;padding:15px 20px;margin:14px 0 24px}.diagram-explainer h4{margin:0 0 8px;color:#13546a}.diagram-explainer p{margin:8px 0;line-height:1.65}@media(max-width:640px){.stage figure{overflow-x:visible}.stage figure img{min-width:0;max-width:100%}}
 
 /* Approved audit revisions */
 .hero-graphic{min-width:0;align-self:center}
@@ -30,3 +30,58 @@
 
 /* v5: accessible responsive instructional diagrams */
 .diagram-figure img{display:block;width:100%;height:auto;max-width:100%;border-radius:14px}.diagram-figure{margin:1.25rem 0}.diagram-figure figcaption{margin-top:.6rem;font-size:.9rem;color:#526482;text-align:center}
+
+/* Responsive revision — Pair 02, 2026-11-17. Layout only. */
+html,body{max-width:100%;}
+.hero-grid>*,.workspace-layout>*,.panel>*,.fields>*,.theory-grid>*,.link-example>*,.page-card>*{min-width:0}
+.panel,.theory-accordion,.theory-block,.page-card,.prompt-box{overflow-wrap:anywhere}
+.stage figure img,.diagram-figure img,.illustrated-figure img{min-width:0;max-width:100%;height:auto}
+.stage figure{overflow-x:visible}
+.header-inner{flex-wrap:wrap;column-gap:14px;row-gap:8px;padding-top:10px;padding-bottom:10px}
+.header-inner .brand{margin-right:auto}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+.stage-nav li a{min-width:0}
+.stage-nav li small{flex:none}
+.export-buttons>*{max-width:100%}
+@media(max-width:950px){
+ .hero-grid{grid-template-columns:minmax(0,1fr);gap:20px;padding-top:30px;padding-bottom:30px}
+ .hero-visual{width:100%;max-width:560px;margin-inline:auto}
+ .hero-visual img{max-height:340px;object-fit:contain}
+ .workspace-layout{grid-template-columns:minmax(0,1fr)}
+ .stage-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 12px}
+}
+@media(max-width:680px){
+ .shell{padding-inline:15px}
+ .hero h1{font-size:clamp(30px,9vw,41px);overflow-wrap:normal}
+ .hero-lead{font-size:16px}
+ .stage-nav{grid-template-columns:minmax(0,1fr)}
+ .fields.two,.compare,.rubrics,.theory-grid,.link-example,.decision-example-grid{grid-template-columns:minmax(0,1fr)}
+ .page-card-top{flex-direction:column;align-items:stretch}
+ .page-card .page-controls{width:100%}
+ .page-card .page-controls select{max-width:100%}
+ .prompt-top{flex-wrap:wrap}
+ .stage-head{align-items:flex-start}
+ .panel{padding:18px}
+ .stage figure{overflow-x:visible}
+ .stage figure img{min-width:0!important;max-width:100%}
+ .mini-wire,.mini-ui{padding:8px;gap:5px}
+ .state-demo{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .export-buttons .button{white-space:normal}
+}
+@media(max-width:390px){
+ .header-inner{gap:8px}
+ .brand{font-size:13px}
+ .brand-mark{font-size:25px}
+ .small-button{font-size:12px;padding:7px 9px}
+ .hero-grid{padding-top:24px;padding-bottom:25px}
+ .hero h1{font-size:clamp(28px,8.8vw,35px)}
+ .hero-chips span{font-size:11px}
+ .stage-nav li a{font-size:12px}
+ .panel{padding:14px}
+ .theory-accordion>summary{padding:13px;font-size:15px}
+ .accordion-body{padding:0 11px 14px}
+ .theory-block{padding:12px}
+ .stage-head h2{font-size:23px}
+ .step-no{width:40px;height:40px;font-size:17px}
+ .export-buttons>*{width:100%}
+}
