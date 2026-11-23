@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-labelledby="t d"><title id="t">Адаптація внутрішньої сторінки</title><desc id="d">Ті самі функції — інший пріоритет і компонування.</desc><rect width="1120" height="560" rx="28" fill="#f6f7ff"/><rect x="24" y="24" width="1072" height="512" rx="24" fill="#fff" stroke="#d8ddf8"/><text x="56" y="80" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#17244a">Адаптація внутрішньої сторінки</text><text x="56" y="116" font-family="Arial,sans-serif" font-size="18" fill="#52627f">Ті самі функції — інший пріоритет і компонування.</text>
+<rect x="56" y="157" width="325" height="284" rx="19" fill="#3765cf" fill-opacity=".08" stroke="#3765cf" stroke-opacity=".45" stroke-width="2"/>
+<rect x="72" y="174" width="293" height="45" rx="12" fill="#3765cf"/>
+<text x="219" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="white">Desktop</text>
+<text x="75" y="258" font-family="Arial,sans-serif" font-size="18" fill="#253354">Фільтри збоку</text>
+<text x="75" y="291" font-family="Arial,sans-serif" font-size="18" fill="#253354">Картки в сітці</text>
+<text x="75" y="324" font-family="Arial,sans-serif" font-size="18" fill="#253354">Основна дія помітна</text>
+<rect x="397" y="157" width="325" height="284" rx="19" fill="#7650cf" fill-opacity=".08" stroke="#7650cf" stroke-opacity=".45" stroke-width="2"/>
+<rect x="413" y="174" width="293" height="45" rx="12" fill="#7650cf"/>
+<text x="560" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="white">Tablet</text>
+<text x="416" y="258" font-family="Arial,sans-serif" font-size="18" fill="#253354">Фільтри компактні</text>
+<text x="416" y="291" font-family="Arial,sans-serif" font-size="18" fill="#253354">Дві колонки карток</text>
+<text x="416" y="324" font-family="Arial,sans-serif" font-size="18" fill="#253354">Дія залишається видимою</text>
+<rect x="739" y="157" width="325" height="284" rx="19" fill="#238e83" fill-opacity=".08" stroke="#238e83" stroke-opacity=".45" stroke-width="2"/>
+<rect x="755" y="174" width="293" height="45" rx="12" fill="#238e83"/>
+<text x="901" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="white">Mobile</text>
+<text x="758" y="258" font-family="Arial,sans-serif" font-size="18" fill="#253354">Фільтри згорнуті</text>
+<text x="758" y="291" font-family="Arial,sans-serif" font-size="18" fill="#253354">Одна колонка</text>
+<text x="758" y="324" font-family="Arial,sans-serif" font-size="18" fill="#253354">Дія поруч зі змістом</text>
+<rect x="56" y="462" width="1008" height="54" rx="13" fill="#edeafd"/><text x="75" y="495" font-family="Arial,sans-serif" font-size="19" font-weight="600" fill="#493a91">768 і 390 px — навчальні фрейми; перевір також 320 px.</text>
+</svg>

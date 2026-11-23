@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#101b37" name="theme-color"/>
+<meta content="Місія 02 · Пара 04 — компоненти Figma, стани кнопки та друга адаптивна сторінка" name="description"/>
+<title>
+   Місія 02 · Пара 04 — Один продукт — багато сторінок
+  </title>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/js/app.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#main">
+   Перейти до завдань
+  </a>
+<header class="site-header">
+<div class="shell header-inner">
+<a class="brand" href="../">
+<span class="brand-mark">
+      ✦
+     </span>
+<span>
+      AI × FIGMA
+      <small>
+       DESIGN LAB
+      </small>
+</span>
+</a>
+<span class="header-tag">
+     МІСІЯ 02 / ПАРА 04
+    </span>
+<button class="small-button" id="themeBtn" type="button">
+     ◐ Тема
+    </button>
+<button aria-pressed="false" class="small-button" id="teacherBtn" type="button">
+     Режим учителя
+    </button>
+</div>
+</header>
+<section class="hero">
+<div class="shell hero-grid">
+<div>
+<p class="eyebrow">
+      10 КЛАС · 90 ХВ · ПРОДОВЖЕННЯ ПРОЄКТУ
+     </p>
+<h1>
+      Один продукт —
+      <em>
+       багато сторінок
+      </em>
+</h1>
+<p class="hero-lead">
+      Розроби внутрішню сторінку власного продукту: збережи спорідненість із головною, продумай навігацію та адаптуй Desktop, Tablet і Mobile. Прототипування — у Парі 05.
+     </p>
+<div class="hero-chips">
+<span>
+       6 етапів
+      </span>
+<span>
+       Figma + ШІ
+      </span>
+<span>
+       Імпорт Пари 03
+      </span>
+<span>
+       JSON / TXT
+      </span>
+</div>
+</div>
+<div class="hero-visual">
+<img alt="Дві взаємопов’язані сторінки цифрового продукту та адаптивні макети" loading="eager" src="assets/images/hero-pair04.png"/>
+</div>
+</div>
+</section>
+<div class="shell workspace-layout">
+<aside class="sidebar">
+<div class="sidebar-sticky">
+<p class="aside-title">
+      НАВІГАЦІЯ
+     </p>
+<nav aria-label="Етапи заняття">
+<ol class="stage-nav">
+<li>
+<a href="#stage1">
+<span>
+          01
+         </span>
+         Аудит
+         <small>
+          10 хв
+         </small>
+</a>
+</li>
+<li>
+<a href="#stage2">
+<span>
+          02
+         </span>
+         Теорія
+         <small>
+          15 хв
+         </small>
+</a>
+</li>
+<li>
+<a href="#stage3">
+<span>
+          03
+         </span>
+         Desktop-сторінка
+         <small>
+          20 хв
+         </small>
+</a>
+</li>
+<li>
+<a href="#stage4">
+<span>
+          04
+         </span>
+         Tablet / Mobile
+         <small>
+          25 хв
+         </small>
+</a>
+</li>
+<li>
+<a href="#stage5">
+<span>
+          05
+         </span>
+         ШІ-аудит
+         <small>
+          15 хв
+         </small>
+</a>
+</li>
+<li>
+<a href="#stage6">
+<span>
+          06
+         </span>
+         Рефлексія
+         <small>
+          5 хв
+         </small>
+</a>
+</li>
+</ol>
+</nav>
+<div class="progress-panel">
+<div class="progress-top">
+<strong>
+        Прогрес
+       </strong>
+<output id="progressLabel">
+        0 / 18
+       </output>
+</div>
+<progress id="progressBar" max="18" value="0">
+</progress>
+<small id="saveState">
+       Дані зберігаються локально
+      </small>
+</div>
+<a class="aside-export" href="#exports">
+      ↓ Зберегти результат
+     </a>
+<a class="aside-export" href="../pair-03/">
+      ← Пара 03
+     </a>
+</div>
+</aside>
+<main id="main">
+<section class="panel teacher-note" hidden="" id="teacherNotes">
+<p class="eyebrow">
+      ЛИШЕ ДЛЯ ВЧИТЕЛЯ
+     </p>
+<h2>
+      Методичні орієнтири
+     </h2>
+<p>
+      90 хв: аудит 10, теорія 15, Desktop внутрішньої сторінки 20, Tablet/Mobile 25, ШІ-аудит 15, підсумок 5. Не повторюємо створення дизайн-системи, кнопок, Sitemap чи головної сторінки. За наявності готового Desktop-макета учень його вдосконалює. Мінімум: одна внутрішня сторінка на трьох розмірах, споріднена з головною, із продуманою навігацією. Прототипування — Пара 05.
+     </p>
+</section>
+<section aria-labelledby="h1" class="stage panel" id="stage1">
+<div class="stage-head">
+<span class="step-no">
+       01
+      </span>
+<div>
+<p class="eyebrow">
+        10 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h1">
+        Аудит і вибір внутрішньої сторінки
+       </h2>
+</div>
+</div>
+<p>
+      Продовжуй власний проєкт: імпортуй JSON Пари 03, відкрий готові макети та обери внутрішню сторінку. Якщо її Desktop-версію створено раніше,
+      <strong>
+       не починай заново
+      </strong>
+      .
+     </p>
+<button class="button secondary" id="importPair3" type="button">
+      ↑ Імпортувати JSON Пари 03
+     </button>
+<input accept=".json,application/json" hidden="" id="importFile" type="file"/>
+<p aria-live="polite" id="importStatus" role="status">
+</p>
+<div aria-live="polite" id="pagesPreview">
+</div>
+<div class="fields two">
+<label>
+       Назва проєкту
+       <textarea data-field="projectName" rows="2"></textarea>
+</label>
+<label>
+       Основне покликання Figma
+       <textarea data-field="figmaUrl" rows="2"></textarea>
+</label>
+<label>
+       Головна · Desktop
+       <textarea data-field="homeDesktopUrl" rows="2"></textarea>
+</label>
+<label>
+       Головна · Tablet
+       <textarea data-field="homeTabletUrl" rows="2"></textarea>
+</label>
+<label>
+       Головна · Mobile
+       <textarea data-field="homeMobileUrl" rows="2"></textarea>
+</label>
+<label>
+       Назва внутрішньої сторінки
+       <textarea data-field="secondName" rows="2"></textarea>
+</label>
+<label>
+       Призначення внутрішньої сторінки
+       <textarea data-field="secondPurpose" rows="2"></textarea>
+</label>
+<label>
+       Звідки й куди веде запланований перехід?
+       <textarea data-field="userFlow" rows="2"></textarea>
+</label>
+</div>
+<label class="check">
+<input data-check="s11" type="checkbox"/>
+<span>
+       Визначено внутрішню сторінку відповідно до вже створеної структури продукту
+      </span>
+</label>
+<label class="check">
+<input data-check="s12" type="checkbox"/>
+<span>
+       Перевірено готові матеріали, повторно нічого не створюю
+      </span>
+</label>
+<label class="check">
+<input data-check="s13" type="checkbox"/>
+<span>
+       Описано призначення сторінки й місце переходу
+      </span>
+</label>
+</section>
+<section aria-labelledby="h2" class="stage panel" id="stage2">
+<div class="stage-head">
+<span class="step-no">
+       02
+      </span>
+<div>
+<p class="eyebrow">
+        15 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h2">
+        Теорія: споріднені сторінки та навігація
+       </h2>
+</div>
+</div>
+<p>
+      Це нові принципи проєктування
+      <strong>
+       внутрішніх сторінок
+      </strong>
+      , а не повторення інструментів Figma. Розкривай підрозділи послідовно.
+     </p>
+<details class="theory">
+<summary>
+       2.1 · Спорідненість без однаковості
+      </summary>
+<div class="theory-body">
+<p>
+        У межах одного продукту користувач має впізнавати навігацію, типографічну ієрархію, стилі кнопок і карток. Але сторінка деталей, каталог та профіль не повинні мати однакову структуру: кожна розв'язує інше завдання.
+       </p>
+<p>
+<strong>
+         Приклад:
+        </strong>
+        на головній — огляд курсів, на внутрішній — деталі одного курсу. Логотип, меню й стилі спільні, але вміст та його ієрархія відрізняються.
+       </p>
+<figure class="lesson-figure">
+<img alt="Приклад узгодженого інтерфейсу на комп’ютері, планшеті й телефоні" loading="lazy" src="assets/images/second-page-responsive.png"/>
+<figcaption>
+         Одна візуальна мова — різне компонування відповідно до завдання та ширини екрана.
+        </figcaption>
+</figure>
+</div>
+</details>
+<details class="theory">
+<summary>
+       2.2 · Навігація: де я, куди далі, як повернутися?
+      </summary>
+<div class="theory-body">
+<p>
+        Навігація внутрішньої сторінки має відповідати на три запитання:
+        <strong>
+         де я перебуваю?
+        </strong>
+        (активний пункт меню або заголовок);
+        <strong>
+         як сюди потрапив?
+        </strong>
+        (зрозумілий контекст);
+        <strong>
+         як повернутися?
+        </strong>
+        (меню, посилання або доречні «хлібні крихти»).
+       </p>
+<p>
+<strong>
+         Помилка:
+        </strong>
+        на сторінці деталей немає назви розділу, а кнопка «Назад» веде в невідоме місце.
+        <strong>
+         Краще:
+        </strong>
+        «Курси / Веброзробка» і зрозумілий шлях до каталогу. Хлібні крихти потрібні не для кожного простого сайту.
+       </p>
+<figure class="lesson-figure">
+<img alt="Послідовність переходів між головною сторінкою, каталогом і сторінкою деталей із можливістю повернення" loading="lazy" src="assets/images/theory-22-navigation.png"/>
+<figcaption>
+         Поки що це план навігації у статичних макетах. Клікабельні переходи створимо в Парі 05.
+        </figcaption>
+</figure>
+</div>
+</details>
+<details class="theory">
+<summary>
+       2.3 · Структура залежить від завдання сторінки
+      </summary>
+<div class="theory-body">
+<p>
+<strong>
+         Каталог:
+        </strong>
+        пошук, фільтри, перелік і картки.
+        <strong>
+         Деталі:
+        </strong>
+        назва, важлива інформація, основна дія, допоміжні відомості.
+        <strong>
+         Профіль:
+        </strong>
+        особисті дані, налаштування, статуси. Не копіюй головну сторінку: визнач пріоритет інформації для конкретної задачі.
+       </p>
+<p>
+        Постав собі питання: яку одну дію користувач має виконати на цій сторінці? Чи видно її без довгого пошуку?
+       </p>
+<figure class="lesson-figure">
+<img alt="Різні структури внутрішніх сторінок: каталог, деталі, інформаційна панель і форма зі спільними елементами дизайну" loading="lazy" src="assets/images/theory-23-page-structure.png"/>
+<figcaption>
+         Різні завдання користувача визначають різні структури внутрішніх сторінок.
+        </figcaption>
+</figure>
+</div>
+</details>
+<details class="theory">
+<summary>
+       2.4 · Адаптація внутрішньої сторінки
+      </summary>
+<div class="theory-body">
+<p>
+        Використовуй уже знайомі Auto Layout, Resizing і Constraints. Нове завдання —
+        <strong>
+         змінити пріоритети вмісту
+        </strong>
+        : фільтри можуть згортатися, картки — ставати вертикальними, допоміжна колонка — переміщуватися нижче, а основна дія — залишатися помітною.
+       </p>
+<p>
+        768 і 390 px — навчальні ширини фреймів, а не універсальні межі для всіх продуктів. Додатково перевір 320 px.
+       </p>
+<figure class="lesson-figure">
+<img alt="Одна внутрішня сторінка у версіях Desktop, Tablet і Mobile та перевірка узгодженості" loading="lazy" src="assets/images/theory-24-adaptation.png"/>
+<figcaption>
+         На малих екранах змінюємо пріоритет і компонування, не втрачаючи основну дію.
+        </figcaption>
+</figure>
+</div>
+</details>
+<details class="theory">
+<summary>
+       2.5 · Аудит цілісності перед прототипуванням
+      </summary>
+<div class="theory-body">
+<p>
+        Порівняй головну та внутрішню сторінки: чи збігаються навігація, правила назв, візуальна мова та очікування користувача? Чи зрозуміло, який елемент у майбутньому відкриватиме іншу сторінку? У цій парі
+        <strong>
+         плануємо
+        </strong>
+        переходи, а не налаштовуємо Prototype.
+       </p>
+<figure class="lesson-figure">
+<img alt="Головна сторінка та дві внутрішні сторінки зі спільною навігацією й візуальною мовою" loading="lazy" src="assets/images/theory-25-consistency-audit.png"/>
+<figcaption>
+         Перед Парою 05 перевіряємо логіку статичних макетів, а не працездатність переходів.
+        </figcaption>
+</figure>
+</div>
+</details>
+<div class="fields">
+<label>
+       Мініперевірка: назви дві спільні ознаки сторінок і одну обґрунтовану відмінність
+       <textarea data-field="theoryInsight" rows="3"></textarea>
+</label>
+</div>
+<label class="check">
+<input data-check="s21" type="checkbox"/>
+<span>
+       Пояснюю різницю між візуальною спорідненістю й однаковими макетами
+      </span>
+</label>
+<label class="check">
+<input data-check="s22" type="checkbox"/>
+<span>
+       Можу визначити поточну сторінку та шлях повернення
+      </span>
+</label>
+<label class="check">
+<input data-check="s23" type="checkbox"/>
+<span>
+       Розумію, як змінюються пріоритети внутрішньої сторінки на телефоні
+      </span>
+</label>
+</section>
+<section aria-labelledby="h3" class="stage panel" id="stage3">
+<div class="stage-head">
+<span class="step-no">
+       03
+      </span>
+<div>
+<p class="eyebrow">
+        20 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h3">
+        Desktop: внутрішня сторінка з власною структурою
+       </h2>
+</div>
+</div>
+<p>
+      Відкрий раніше створений Desktop-макет внутрішньої сторінки або побудуй його з готових компонентів.
+      <strong>
+       Не створюй повторно палітру, кнопки чи дизайн-систему.
+      </strong>
+</p>
+<div aria-label="Маршрут етапу 03" class="lab-route"><h3>Маршрут роботи у Figma</h3><p class="lab-route-lead">Твоя місія: підготувати Desktop-макет внутрішньої сторінки, яку користувач зможе впізнати як частину твого продукту.</p><article class="lab-task"><span aria-hidden="true" class="lab-task-no">01</span><div class="lab-task-content"><h4>Визнач завдання сторінки</h4><p>Подумай, навіщо користувач відкриває цю сторінку та яку одну головну дію він має виконати.</p><p class="lab-task-result">Результат: одне чітке речення про призначення сторінки.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">02</span><div class="lab-task-content"><h4>Побудуй ієрархію</h4><p>Розташуй заголовок, основний вміст, головну дію та допоміжні блоки за важливістю.</p><p class="lab-task-result">Результат: потрібну інформацію легко знайти з першого погляду.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">03</span><div class="lab-task-content"><h4>Збережи спорідненість</h4><p>Використай наявну навігацію, типографіку, компоненти й кольорові ролі з головної сторінки.</p><p class="lab-task-result">Результат: обидві сторінки виглядають як частини одного продукту.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">04</span><div class="lab-task-content"><h4>Продумай орієнтацію</h4><p>Познач активний розділ меню та зрозумілий спосіб повернутися до попереднього розділу.</p><p class="lab-task-result">Результат: користувач розуміє, де перебуває і куди повернутися.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">05</span><div class="lab-task-content"><h4>Підготуй перехід для Пари 05</h4><p>Визнач елемент, через який користувач згодом перейде на цю сторінку.</p><p class="lab-task-result">Результат: є зрозумілий задум майбутнього переходу.</p></div></article></div>
+<h3 class="lab-section-title">Зафіксуй свій результат</h3><p class="lab-fields-lead">Заповнюй поля після виконання відповідних кроків. Відповіді зберігаються автоматично.</p><div class="fields two">
+<label>
+       Покликання на Desktop-фрейм внутрішньої сторінки
+       <span class="field-help">Встав посилання на конкретний Desktop-фрейм у Figma (Share → Copy link).</span><textarea data-field="secondDesktopUrl" placeholder="Запиши результат своєї роботи…" rows="2"></textarea>
+</label>
+<label>
+       Яка інформація головна, а яка другорядна?
+       <span class="field-help">Напиши, що користувач бачить першим, другим і третім та чому саме в такому порядку.</span><textarea data-field="contentHierarchy" placeholder="Запиши результат своєї роботи…" rows="3"></textarea>
+</label>
+<label>
+       Що робить цю сторінку спорідненою з головною?
+       <span class="field-help">Назви 2–3 спільні елементи з головною сторінкою (наприклад, навігація, картки, типографіка).</span><textarea data-field="visualConsistency" placeholder="Запиши результат своєї роботи…" rows="3"></textarea>
+</label>
+<label>
+       Як користувач повернеться до попереднього розділу?
+       <span class="field-help">Опиши, який елемент веде назад і як позначено поточний розділ.</span><textarea data-field="navigationPlan" placeholder="Запиши результат своєї роботи…" rows="3"></textarea>
+</label>
+</div>
+<h3 class="lab-section-title">Самоперевірка перед переходом</h3><label class="lab-check check">
+<input data-check="s31" type="checkbox"/>
+<span>
+       Desktop-сторінка має зрозумілу ієрархію та головну дію
+      </span>
+</label>
+<label class="lab-check check">
+<input data-check="s32" type="checkbox"/>
+<span>
+       Спільні елементи дизайн-системи застосовано послідовно
+      </span>
+</label>
+<label class="lab-check check">
+<input data-check="s33" type="checkbox"/>
+<span>
+       Позначено активний розділ і логічний шлях повернення
+      </span>
+</label><div class="lab-finish"><p>Готово, якщо Desktop-фрейм має головну дію, спільний стиль і зрозумілу навігацію. Познач три пункти самоперевірки та переходь до адаптації.</p><a class="lab-next" href="#stage4">Далі: адаптація Tablet і Mobile →</a></div>
+</section>
+<section aria-labelledby="h4" class="stage panel" id="stage4">
+<div class="stage-head">
+<span class="step-no">
+       04
+      </span>
+<div>
+<p class="eyebrow">
+        25 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h4">
+        Tablet і Mobile: адаптація внутрішньої сторінки
+       </h2>
+</div>
+</div>
+<p>
+      Адаптуй
+      <strong>
+       саме внутрішню сторінку
+      </strong>
+      , зважаючи на її специфічні блоки. Це застосування попередніх знань до нової задачі, а не повторне створення головної.
+     </p>
+<div aria-label="Маршрут етапу 04" class="lab-route"><h3>Маршрут роботи у Figma</h3><p class="lab-route-lead">Твоя місія: адаптувати саме цю внутрішню сторінку для планшета й телефона, не втративши її головної дії та зв’язку з головною сторінкою.</p><article class="lab-task"><span aria-hidden="true" class="lab-task-no">01</span><div class="lab-task-content"><h4>Tablet · 768 px</h4><p>Створи або вдоскональ планшетний фрейм. Перевір ширину контенту, навігацію та другорядні блоки.</p><p class="lab-task-result">Результат: читабельний Tablet-макет без випадкового обрізання.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">02</span><div class="lab-task-content"><h4>Mobile · 390 px</h4><p>Визнач, що має бути на першому екрані. Перебудуй складні блоки та залиш головну дію доступною.</p><p class="lab-task-result">Результат: зрозумілий Mobile-макет із пріоритетним вмістом.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">03</span><div class="lab-task-content"><h4>Контроль · 320 px</h4><p>Перевір вузький екран: перенесення тексту, горизонтальне переповнення, порядок блоків та доступність дій.</p><p class="lab-task-result">Результат: записано, що працює та що потребує виправлення.</p></div></article><article class="lab-task"><span aria-hidden="true" class="lab-task-no">04</span><div class="lab-task-content"><h4>Порівняй із головною</h4><p>Порівняй навігацію, заголовки, кнопки та відступи внутрішньої й головної сторінок на кожному пристрої.</p><p class="lab-task-result">Результат: сторінки споріднені, але не копіюють одна одну.</p></div></article></div>
+<h3 class="lab-section-title">Зафіксуй свій результат</h3><p class="lab-fields-lead">Заповнюй поля після виконання відповідних кроків. Відповіді зберігаються автоматично.</p><div class="fields two">
+<label>
+       Покликання на Tablet-фрейм
+       <span class="field-help">Встав посилання на Tablet-фрейм у Figma.</span><textarea data-field="secondTabletUrl" placeholder="Запиши результат своєї роботи…" rows="2"></textarea>
+</label>
+<label>
+       Покликання на Mobile-фрейм
+       <span class="field-help">Встав посилання на Mobile-фрейм у Figma.</span><textarea data-field="secondMobileUrl" placeholder="Запиши результат своєї роботи…" rows="2"></textarea>
+</label>
+<label>
+       Що змінилося в розміщенні блоків і чому?
+       <textarea data-field="responsiveDecisions" placeholder="Запиши результат своєї роботи…" rows="3"></textarea>
+</label>
+<label>
+       Результат перевірки за 320 px
+       <span class="field-help">Напиши, що перевірив(-ла) на ширині 320 px і який результат отримав(-ла).</span><textarea data-field="check320" placeholder="Запиши результат своєї роботи…" rows="3"></textarea>
+</label>
+</div>
+<h3 class="lab-section-title">Самоперевірка перед переходом</h3><label class="lab-check check">
+<input data-check="s41" type="checkbox"/>
+<span>
+       Tablet-версію внутрішньої сторінки створено або вдосконалено
+      </span>
+</label>
+<label class="lab-check check">
+<input data-check="s42" type="checkbox"/>
+<span>
+       Mobile-версія зберігає головну дію та зрозумілу навігацію
+      </span>
+</label>
+<label class="lab-check check">
+<input data-check="s43" type="checkbox"/>
+<span>
+       Перевірено вузький екран і спорідненість із головною
+      </span>
+</label><div class="lab-finish"><p>Готово, якщо є Tablet- і Mobile-фрейми, головна дія помітна, а перевірка 320 px зафіксована. Познач три пункти самоперевірки.</p><a class="lab-next" href="#stage5">Далі: ШІ-аудит →</a></div>
+</section>
+<section aria-labelledby="h5" class="stage panel" id="stage5">
+<div class="stage-head">
+<span class="step-no">
+       05
+      </span>
+<div>
+<p class="eyebrow">
+        15 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h5">
+        ШІ-аудит спорідненості та навігації
+       </h2>
+</div>
+</div>
+<p>
+      Передай ШІ скриншоти без персональних даних. Рекомендації перевіряй самостійно у Figma. На цьому занятті
+      <strong>
+       не тестуємо клікабельний прототип
+      </strong>
+      .
+     </p>
+<details class="theory prompt-accordion">
+<summary>
+       Промпт 1 · Візуальна спорідненість
+      </summary>
+<div class="theory-body">
+<p>
+        Порівняй головну та внутрішню сторінки одного цифрового продукту на скриншотах. Вкажи до п’яти конкретних ознак візуальної спорідненості або неузгодженості: навігація, типографіка, компоненти, відступи, назви розділів. Для кожної проблеми наведи видимий доказ. Не пропонуй заново створювати дизайн-систему.
+       </p>
+<button class="button secondary copy-prompt" data-prompt="Порівняй головну та внутрішню сторінки одного цифрового продукту на скриншотах. Вкажи до п’яти конкретних ознак візуальної спорідненості або неузгодженості: навігація, типографіка, компоненти, відступи, назви розділів. Для кожної проблеми наведи видимий доказ. Не пропонуй заново створювати дизайн-систему." type="button">
+        Копіювати промпт
+       </button>
+</div>
+</details>
+<details class="theory prompt-accordion">
+<summary>
+       Промпт 2 · Навігація та адаптивність
+      </summary>
+<div class="theory-body">
+<p>
+        Оціни три версії внутрішньої сторінки: Desktop, Tablet, Mobile. Чи збережено пріоритет головної дії, чи зрозуміло, де перебуває користувач і як повернутися? Знайди до трьох конкретних ризиків. Відокрем спостереження від припущень; не стверджуй, що переходи працюють, адже це ще статичні макети.
+       </p>
+<button class="button secondary copy-prompt" data-prompt="Оціни три версії внутрішньої сторінки: Desktop, Tablet, Mobile. Чи збережено пріоритет головної дії, чи зрозуміло, де перебуває користувач і як повернутися? Знайди до трьох конкретних ризиків. Відокрем спостереження від припущень; не стверджуй, що переходи працюють, адже це ще статичні макети." type="button">
+        Копіювати промпт
+       </button>
+</div>
+</details>
+<div class="fields two">
+<label>
+       Що саме помітив ШІ?
+       <textarea data-field="aiFeedback" rows="3"></textarea>
+</label>
+<label>
+       Яку рекомендацію прийнято й чому?
+       <textarea data-field="aiAccepted" rows="3"></textarea>
+</label>
+<label>
+       Яку рекомендацію відхилено й чому?
+       <textarea data-field="aiRejected" rows="3"></textarea>
+</label>
+</div>
+<label class="check">
+<input data-check="s51" type="checkbox"/>
+<span>
+       Порівняно головну та внутрішню сторінки
+      </span>
+</label>
+<label class="check">
+<input data-check="s52" type="checkbox"/>
+<span>
+       Перевірено логіку навігації та три версії внутрішньої сторінки
+      </span>
+</label>
+<label class="check">
+<input data-check="s53" type="checkbox"/>
+<span>
+       Зафіксовано власне обґрунтоване рішення щодо рекомендацій ШІ
+      </span>
+</label>
+</section>
+<section aria-labelledby="h6" class="stage panel" id="stage6">
+<div class="stage-head">
+<span class="step-no">
+       06
+      </span>
+<div>
+<p class="eyebrow">
+        5 ХВ · НАВЧАЛЬНА ЛАБОРАТОРІЯ
+       </p>
+<h2 id="h6">
+        Рефлексія та збереження
+       </h2>
+</div>
+</div>
+<p>
+      Зафіксуй власні рішення та їхні підстави. Якість роботи перевіряється за Figma-макетами, не лише за чеклістом.
+     </p>
+<div class="fields two">
+<label>
+       Що вдалося і що було найскладнішим?
+       <textarea data-field="reflection" rows="3"></textarea>
+</label>
+<label>
+       Що завершити перед Парою 05?
+       <textarea data-field="nextSteps" rows="3"></textarea>
+</label>
+</div>
+<h3>
+      Журнал рішень
+     </h3>
+<div class="fields two">
+<label>
+       Рішення
+       <textarea data-field="decisionText" rows="3"></textarea>
+</label>
+<label>
+       Підстава / джерело
+       <textarea data-field="decisionReason" rows="3"></textarea>
+</label>
+</div>
+<button class="button secondary" id="addDecision" type="button">
+      + Додати запис
+     </button>
+<div aria-live="polite" id="decisionsList">
+</div>
+<h3>
+      Самооцінка · 0–3 бали за критерієм
+     </h3>
+<div class="fields two">
+<label>
+       Візуальна спорідненість сторінок
+       <select data-field="scoreConsistency">
+<option value="0">
+         0 — немає доказів
+        </option>
+<option value="1">
+         1 — початковий рівень
+        </option>
+<option value="2">
+         2 — частково виконано
+        </option>
+<option value="3">
+         3 — якісний результат
+        </option>
+</select>
+</label>
+<label>
+       Структура та логіка навігації
+       <select data-field="scoreNavigation">
+<option value="0">
+         0 — немає доказів
+        </option>
+<option value="1">
+         1 — початковий рівень
+        </option>
+<option value="2">
+         2 — частково виконано
+        </option>
+<option value="3">
+         3 — якісний результат
+        </option>
+</select>
+</label>
+<label>
+       Адаптація внутрішньої сторінки
+       <select data-field="scoreResponsive">
+<option value="0">
+         0 — немає доказів
+        </option>
+<option value="1">
+         1 — початковий рівень
+        </option>
+<option value="2">
+         2 — частково виконано
+        </option>
+<option value="3">
+         3 — якісний результат
+        </option>
+</select>
+</label>
+<label>
+       ШІ-аудит і обґрунтування
+       <select data-field="scoreAudit">
+<option value="0">
+         0 — немає доказів
+        </option>
+<option value="1">
+         1 — початковий рівень
+        </option>
+<option value="2">
+         2 — частково виконано
+        </option>
+<option value="3">
+         3 — якісний результат
+        </option>
+</select>
+</label>
+</div>
+<p>
+<strong>
+       Самооцінка:
+       <output id="totalScore">
+        0
+       </output>
+       /12
+      </strong>
+</p>
+<div class="checklist">
+<label>
+<input data-check="s61" type="checkbox"/>
+       Заповнено журнал рішень
+      </label>
+<label>
+<input data-check="s62" type="checkbox"/>
+       Виконано рефлексію та самооцінку
+      </label>
+<label>
+<input data-check="s63" type="checkbox"/>
+       Експортовано TXT і JSON
+      </label>
+</div>
+</section>
+<section class="panel" id="exports">
+<p class="eyebrow">
+      ЕКСПОРТ ТА ВІДНОВЛЕННЯ
+     </p>
+<h2>
+      Збережи результат
+     </h2>
+<p>
+<strong>
+       TXT
+      </strong>
+      — звіт для Moodle;
+      <strong>
+       JSON
+      </strong>
+      — повний стан Пари 04. Зберігай оригінальний JSON Пари 03 окремо.
+     </p>
+<div class="export-buttons">
+<button class="button primary" id="exportTxt" type="button">
+       ↓ Завантажити TXT
+      </button>
+<button class="button secondary" id="exportJson" type="button">
+       ↓ Зберегти JSON Пари 04
+      </button>
+<button class="button secondary" id="restoreBtn" type="button">
+       ↑ Відновити JSON Пари 04
+      </button>
+<input accept=".json,application/json" hidden="" id="restoreFile" type="file"/>
+</div>
+<p class="muted">
+      LocalStorage зберігає дані лише в цьому браузері на цьому пристрої. Для переходу між пристроями експортуй JSON.
+     </p>
+<p aria-live="polite" id="status" role="status">
+</p>
+</section>
+</main>
+</div>
+<footer class="footer">
+   AI × FIGMA · DESIGN LAB · Місія 02 / Пара 04 · Споріднені сторінки. Зрозуміла навігація. Адаптивність.
+  </footer>
+</body>
+</html>
